@@ -3,6 +3,7 @@ $(document).ready(function() {
 
   // Obtener subcategorias
   $.get('https://api.mercadolibre.com/categories/MPE1071', function(response) {
+    console.log(response);
     for (const subcategory of response.children_categories) {
       const li = `<li class="nav-item">
                     <a class="nav-link" href="#">${subcategory.name}</a>
