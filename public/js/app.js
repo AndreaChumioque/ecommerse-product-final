@@ -49,7 +49,7 @@ $(document).ready(function() {
                           <div class="card-body">
                             <h6 class="card-title font-weight-bold">${item.title}</h6>
                             <h6 class="card-text">${item.price} ${item.installments.currency_id}</h6>
-                            <a href="#" class="btn btn-primary">Go somewhere</a>
+                            <a href="#" class="btn btn-primary">Añadir a carrito de compra</a>
                           </div>
                         </div>
 
