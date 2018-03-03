@@ -2,7 +2,24 @@
   font-family: 'Open Sans', sans-serif;
 }
 
-#hero {
-  border: 3px dashed #fc7c81;
-  /* background-color: #; */
+#info {
+  border: 3px dashed #fb7b80;
+  background-color: #f5f8f9;
+  background-image: url(../assets/images/logo.jpg);
+}
+
+.bg-image {
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+}
+
+.font-2 {
+  font-family: 'Unica One', cursive;
+}
+
+.paragraph-jumbotron {
+  font-size: 1.75rem;
+  font-weight: bold;
+  color: #fb7b80;
 }
