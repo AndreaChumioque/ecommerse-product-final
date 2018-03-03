@@ -3,7 +3,7 @@ $(document).ready(function() {
 
   // Obtener subcategorias
   $.get('https://api.mercadolibre.com/categories/MPE1071', function(response) {
-    console.log(response);
+    // console.log(response);
     for (const subcategory of response.children_categories) {
       const li = `<li class="nav-item">
                     <a class="nav-link" href="#">${subcategory.name}</a>
@@ -16,6 +16,7 @@ $(document).ready(function() {
   $.ajax({
     url: 'https://api.mercadolibre.com/sites/MPE/search?category=MPE1071',
     success: function(data){
+      console.log(data.results);
       for (const item of data.results) {
         const div = `<div class="col-12 col-sm-6 col-md-4 d-flex mb-3">
 
