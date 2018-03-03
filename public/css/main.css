@@ -23,3 +23,16 @@
   font-weight: bold;
   color: #fb7b80;
 }
+
+.btn-pet {
+  background-color: white;
+  border: 2px dashed #ffe182;
+  color: #4b4b4b;
+  white-space: normal;
+}
+
+.btn-pet:hover {
+  background-color: #ffe182;
+  border-color: #fff;
+  color: #fff;
+}
