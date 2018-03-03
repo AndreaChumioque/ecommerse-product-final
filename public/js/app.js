@@ -11,7 +11,7 @@ $(document).ready(function() {
       $('#navbarNav .navbar-nav').append(li);
 
       // uso de la libreria page.js para enrutar cada categoria
-      page(`/${subcategory.name}`, function() {
+      page(`/:${subcategory.name}`, function() {
         $('#general-products').html('');
         $.ajax({
           url: `https://api.mercadolibre.com/sites/MPE/search?category=${subcategory.id}`,
