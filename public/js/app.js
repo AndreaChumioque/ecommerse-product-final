@@ -41,6 +41,7 @@ $(document).ready(function() {
   // Obetener todos los productos
   $.ajax({
     url: 'https://api.mercadolibre.com/sites/MPE/search?category=MPE1071',
+    contentType: 'application/json',
     success: function(data){
       // console.log(data.results);
       for (const item of data.results) {
