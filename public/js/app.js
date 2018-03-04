@@ -6,12 +6,12 @@ $(document).ready(function() {
     console.log(response);
     for (const subcategory of response.children_categories) {
       const li = `<li class="nav-item">
-                    <a class="nav-link" href="${subcategory.name}">${subcategory.name}</a>
+                    <a class="nav-link" href="/${subcategory.name}">${subcategory.name}</a>
                   </li>`;
       $('#navbarNav .navbar-nav').append(li);
-
+      // aqui debe estar e problema, la libreria page.js se supone que debe enrutar
       // uso de la libreria page.js para enrutar cada categoria
-      page(`/:${subcategory.name}`, function() {
+      page(`/${subcategory.name}`, function() {
         $('#general-products').html('');
         $.ajax({
           url: `https://api.mercadolibre.com/sites/MPE/search?category=${subcategory.id}`,
