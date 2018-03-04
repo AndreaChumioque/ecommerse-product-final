@@ -9,7 +9,6 @@ $(document).ready(function() {
                     <a class="nav-link" href="/${subcategory.name}">${subcategory.name}</a>
                   </li>`;
       $('#navbarNav .navbar-nav').append(li);
-      // aqui debe estar e problema, la libreria page.js se supone que debe enrutar
       // uso de la libreria page.js para enrutar cada categoria
       page(`/${subcategory.name}`, function() {
         $('#general-products').html('');
